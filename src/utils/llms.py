@@ -10,7 +10,7 @@ if not GROQ_API_KEY:
     raise ValueError("❌ GROQ_API_KEY is not set in .env file")
 
 class LLMModel:
-    def __init__(self, model_name: str = "llama-3.3-70b-versatile"):
+    def __init__(self, model_name: str = "llama-3.1-8b-instant"):
         self.model_name = model_name
 
         self.llm = ChatGroq(
